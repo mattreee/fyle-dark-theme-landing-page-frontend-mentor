@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+// Primary
+$dark-blue-intro-email: hsl(217, 28%, 15%); // intro and email sign up bg
+$dark-blue-main-bg: hsl(218, 28%, 13%); // main background
+$dark-blue-footer: hsl(216, 53%, 9%); // footer background
+$dark-blue-testimonials: hsl(219, 30%, 18%); // testimonials background
+
+// Accent
+$cyan: hsl(176, 68%, 64%); // inside call-to-action gradient
+$blue: hsl(198, 60%, 50%); // inside call-to-action gradient
+$light-red: hsl(0, 100%, 63%); // error
+
+// Neutral
+$white: white;
+
+// #Typography
+// Body Copy
+$fs: 14px;
+
+// Headings, Call-to-actions, Header Navigation
+$ff-raleway: "Raleway", sans-serif;
+$fw-raleway-regular: 400;
+$fw-raleway-bold: 700;
+
+// body
+$ff-open-sans: "Open Sans", sans-serif;
+$fw-open-sans-regular: 400;
+$fw-open-sans-bold: 700;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222;
+  color: #eee;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
