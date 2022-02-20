@@ -135,6 +135,39 @@ $fw-open-sans-bold: 700;
 	}
 }
 
+.more {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+
+	padding: 8% 10%;
+	background-color: $dark-blue-main-bg;
+	color: $white;
+
+	font-family: $ff-raleway;
+
+	&__image {
+		max-width: 100%;
+	}
+
+	&__title {
+		font-size: 3rem;
+	}
+
+	&__desc {
+		margin-top: 1rem;
+		font-size: 1.05rem;
+		line-height: 1.5;
+	}
+
+	&__link {
+		color: $cyan;
+		line-height: 4rem;
+		text-decoration: none;
+		border-bottom: $cyan 1.5px solid;
+	}
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
