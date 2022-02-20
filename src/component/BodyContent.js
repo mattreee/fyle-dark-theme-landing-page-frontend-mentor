@@ -2,9 +2,9 @@ import React from 'react'
 
 const BodyContent = ({ children }) => {
   return (
-    <div>
+    <section className='body-content'>
       {children}
-    </div>
+    </section>
   )
 }
 

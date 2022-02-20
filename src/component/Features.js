@@ -2,27 +2,27 @@ import React from 'react'
 
 const Features = () => {
   return (
-    <div>
-      Access your files, anywhere
+    <section className='features'>
+      <div className='features__feature'>
+        <h2 className='features__title'>Access your files, anywhere</h2>
+        <p className='features__desc'>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
+      </div>
 
-      The ability to use a smartphone, tablet, or computer to access your account means your
-      files follow you everywhere.
+      <div className='features__feature'>
+        <h2 className='features__title'>Security you can trust</h2>
+        <p className='features__desc'>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+      </div>
 
-      Security you can trust
+      <div className='features__feature'>
+        <h2 className='features__title'>Real-time collaboration</h2>
+        <p className='features__desc'>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+      </div>
 
-      2-factor authentication and user-controlled encryption are just a couple of the security
-      features we allow to help secure your files.
-
-      Real-time collaboration
-
-      Securely share files and folders with friends, family and colleagues for live collaboration.
-      No email attachments required.
-
-      Store any type of file
-
-      Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
-      file types to be securely stored and shared.
-    </div>
+      <div className='features__feature'>
+        <h2 className='features__title'>Store any type of file</h2>
+        <p className='features__desc'>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+      </div>
+    </section>
   )
 }
 

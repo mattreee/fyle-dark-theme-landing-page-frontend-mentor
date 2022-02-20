@@ -2,25 +2,25 @@ import React from 'react'
 
 const Testimonies = () => {
   return (
-    <div>
-      Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-      become a well-oiled collaboration machine.
+    <section className='testimonies'>
+      <div className='testimonies__card'>
+        <p className='testimonies__desc'>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+        <p className='testimonies__name'>Satish Patel</p>
+        <p className='testimonies__position'>Founder & CEO, Huddle</p>
+      </div>
 
-      Satish Patel
-      Founder & CEO, Huddle
+      <div className='testimonies__card'>
+        <p className='testimonies__desc'>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+        <p className='testimonies__name'>Bruce McKenzie</p>
+        <p className='testimonies__position'>Founder & CEO, Huddle</p>
+      </div>
 
-      Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-      become a well-oiled collaboration machine.
-
-      Bruce McKenzie
-      Founder & CEO, Huddle
-
-      Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-      become a well-oiled collaboration machine.
-
-      Iva Boyd
-      Founder & CEO, Huddle
-    </div>
+      <div className='testimonies__card'>
+        <p className='testimonies__desc'>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+        <p className='testimonies__name'>Iva Boyd</p>
+        <p className='testimonies__position'>Founder & CEO, Huddle</p>
+      </div>
+    </section>
   )
 }
 
