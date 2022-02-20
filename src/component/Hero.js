@@ -1,9 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import Illustration from '../images/illustration-intro.png';
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <section className="hero">
+      <img className="hero__illustration" src={Illustration} alt='' />
       <h1 className="hero__title">All your files in one secure location, accessible anywhere.</h1>
 
       <p className="hero__desc">
@@ -13,7 +15,7 @@ const Hero = () => {
       </p>
 
       <a className="hero__cta" href="#">Get Started</a>
-    </div>
+    </section>
   );
 };
 
