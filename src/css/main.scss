@@ -237,6 +237,56 @@ $fw-open-sans-bold: 700;
 	}
 }
 
+.subscribe {
+	background-image: linear-gradient(
+		to bottom,
+		$dark-blue-main-bg 50%,
+		$dark-blue-footer 50%
+	);
+	color: $white;
+	font-family: $ff-raleway;
+
+	&__title {
+		font-size: 2.1rem;
+	}
+
+	&__desc {
+		margin: 1.5rem 0;
+	}
+
+	&__form {
+		background-color: adjust-color($card-background-color, 5deg);
+		margin: 0 auto;
+		padding: 3rem 8rem;
+		text-align: center;
+		width: 65%;
+		border-radius: 8px;
+		box-shadow: 5px 8px 3px 3px rgba(darken($dark-blue-footer, 40%), 0.1);
+
+		&-inputs {
+			display: grid;
+			padding: 0 10%;
+			gap: 1rem;
+			grid-template-columns: 3fr 1fr;
+		}
+	}
+
+	&__email {
+		width: 100%;
+		padding: 0.5em 1rem;
+		font-size: 1.05em;
+		border-radius: 25px;
+	}
+
+	&__submit {
+		background-color: lighten($blue, 10%);
+		color: $white;
+		font-weight: $fw-raleway-bold;
+		padding: 0 1.5em;
+		border-radius: 25px;
+	}
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
