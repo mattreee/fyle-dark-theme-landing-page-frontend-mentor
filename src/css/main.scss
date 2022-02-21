@@ -10,6 +10,7 @@ $dark-blue-testimonials: hsl(219, 30%, 18%); // testimonials background
 $cyan: hsl(176, 68%, 64%); // inside call-to-action gradient
 $blue: hsl(198, 60%, 50%); // inside call-to-action gradient
 $light-red: hsl(0, 100%, 63%); // error
+$card-background-color: #21293c;
 
 // Neutral
 $white: white;
@@ -40,7 +41,7 @@ $fw-open-sans-bold: 700;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 3rem 4rem;
+	padding: 3em 4em;
 
 	&__logo {
 		width: 12%;
@@ -48,7 +49,7 @@ $fw-open-sans-bold: 700;
 
 	&__ul {
 		display: flex;
-		gap: 3rem;
+		gap: 3em;
 		list-style: none;
 	}
 
@@ -120,13 +121,13 @@ $fw-open-sans-bold: 700;
 
 	&__feature {
 		text-align: center;
-		padding: 1rem 0;
+		padding: 1em 0;
 
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: 0.9rem;
+		gap: 0.9em;
 	}
 
 	&__desc {
@@ -155,8 +156,8 @@ $fw-open-sans-bold: 700;
 	}
 
 	&__desc {
-		margin-top: 1rem;
 		font-size: 1.05rem;
+		margin-top: 1em;
 		line-height: 1.5;
 	}
 
@@ -165,6 +166,74 @@ $fw-open-sans-bold: 700;
 		line-height: 4rem;
 		text-decoration: none;
 		border-bottom: $cyan 1.5px solid;
+	}
+}
+
+.testimonies {
+	background-color: $dark-blue-main-bg;
+	color: $white;
+	padding: 0 10%;
+	padding-top: 3rem;
+	padding-bottom: 4rem;
+	font-family: $ff-raleway;
+
+	display: flex;
+	gap: 2rem;
+	position: relative;
+	z-index: -2;
+
+	&__card {
+		background-color: $card-background-color;
+		padding: 2rem;
+		border-radius: 4px;
+		box-shadow: 8px 10px 0 3px rgba($dark-blue-intro-email, 0.5);
+		position: relative;
+
+		&:first-child::before {
+			position: absolute;
+			content: url("../images/bg-quotes.png");
+			top: -2.2rem;
+			left: -0.7rem;
+			z-index: -1;
+		}
+	}
+
+	&__desc {
+		font-size: 0.95rem;
+		line-height: 1.5;
+		color: rgba($white, 0.95);
+	}
+
+	&__person {
+		margin-top: 1.8rem;
+		width: 55%;
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		align-items: center;
+		grid-template-areas:
+			"pic name"
+			"pic position";
+	}
+
+	&__pic {
+		grid-area: pic;
+		max-width: 80%;
+		border-radius: 50%;
+	}
+
+	&__name {
+		grid-area: name;
+		font-size: 0.8em;
+		letter-spacing: 0.08rem;
+		font-weight: $fw-raleway-bold;
+		color: $white;
+	}
+
+	&__position {
+		grid-area: position;
+		color: rgba($cyan, 0.95);
+		margin-top: 0.5em;
+		font-size: 0.6rem;
 	}
 }
 
