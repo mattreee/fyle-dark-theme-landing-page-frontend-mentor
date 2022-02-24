@@ -17,7 +17,7 @@ const Footer = () => {
 
       <div className='footer__container'>
         <address className='footer__address'>
-          <img src={IconLocation} alt='' />
+          <img className='footer__location' src={IconLocation} alt='' />
           <p className='footer__address-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
           <div className='footer__address-info'>
             <p className='footer__address-phone'>

@@ -10,7 +10,7 @@ const Subscribe = () => {
 
         <div className='subscribe__form-inputs'>
           <label className='subscribe__label'>
-            <input className='subscribe__email' type="email" name='email' />
+            <input className='subscribe__email' type="email" name='email' placeholder='email@example.com' />
           </label>
           <input className='subscribe__submit' type="submit" value="Get Started For Free" />
         </div>
