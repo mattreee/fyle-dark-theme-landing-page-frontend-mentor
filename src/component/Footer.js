@@ -30,22 +30,24 @@ const Footer = () => {
             </p>
           </div>
         </address>
-        <ul className='footer__nav'>
-          <li><a className='footer__nav-link' href='#'>About Us</a></li>
-          <li><a className='footer__nav-link' href='#'>Jobs</a></li>
-          <li><a className='footer__nav-link' href='#'>Press</a></li>
-          <li><a className='footer__nav-link' href='#'>Blog</a></li>
-        </ul>
-        <ul className='footer__nav'>
-          <li><a className='footer__nav-link' href='#'>Contact Us</a></li>
-          <li><a className='footer__nav-link' href='#'>Terms</a></li>
-          <li><a className='footer__nav-link' href='#'>Privacy</a></li>
-        </ul>
-        <ul className='footer__socials'>
-          <li><a href='#'><img src={SocialFace} alt='' /></a></li>
-          <li><a href='#'><img src={SocialBird} alt='' /></a></li>
-          <li><a href='#'><img src={SocialCam} alt='' /></a></li>
-        </ul>
+        <div className='footer__navs'>
+          <ul className='footer__nav'>
+            <li><a className='footer__nav-link' href='#'>About Us</a></li>
+            <li><a className='footer__nav-link' href='#'>Jobs</a></li>
+            <li><a className='footer__nav-link' href='#'>Press</a></li>
+            <li><a className='footer__nav-link' href='#'>Blog</a></li>
+          </ul>
+          <ul className='footer__nav'>
+            <li><a className='footer__nav-link' href='#'>Contact Us</a></li>
+            <li><a className='footer__nav-link' href='#'>Terms</a></li>
+            <li><a className='footer__nav-link' href='#'>Privacy</a></li>
+          </ul>
+          <ul className='footer__socials'>
+            <li><a href='#'><img src={SocialFace} alt='' /></a></li>
+            <li><a href='#'><img src={SocialBird} alt='' /></a></li>
+            <li><a href='#'><img src={SocialCam} alt='' /></a></li>
+          </ul>
+        </div>
       </div>
     </footer>
   )

@@ -154,7 +154,7 @@
 }
 
 .more__image {
-  max-width: 100%;
+  width: 50%;
 }
 
 .more__title {
@@ -366,6 +366,13 @@
   padding-right: 1.5rem;
 }
 
+.footer__navs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+}
+
 .footer__nav {
   list-style: none;
   font-family: "Raleway", sans-serif;
@@ -386,6 +393,15 @@
 
 .footer__nav-link:hover {
   font-weight: 700;
+}
+
+.footer__nav-link::after {
+  display: block;
+  content: "Contact Us";
+  font-weight: 700;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
 }
 
 .footer__socials {
@@ -428,6 +444,7 @@
     background-image: url("../images/bg-curvy-mobile.svg"), -webkit-gradient(linear, left top, left bottom, color-stop(59%, #1c2431), color-stop(41%, #181f2a));
     background-image: url("../images/bg-curvy-mobile.svg"), linear-gradient(to bottom, #1c2431 59%, #181f2a 41%);
     background-position: center;
+    padding-top: 3rem;
   }
   .hero__illustration {
     width: 80%;
@@ -463,6 +480,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .more__image {
+    width: 100%;
   }
   .more__title {
     font-size: 1.3rem;
@@ -560,6 +580,12 @@
     -ms-grid-column-align: start;
         justify-self: start;
     padding: 0;
+  }
+  .footer__navs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__location {
     -ms-grid-row: 1;
